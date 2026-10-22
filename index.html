@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cámaras App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="titlebar">
+    <span class="title" data-i18n="appTitle">📷 Cámaras App</span>
+    <div class="lang-selector">
+      <select id="langSelect" onchange="setLanguage(this.value)">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+      </select>
+    </div>
+    <div class="titlebar-buttons">
+      <button class="tb-btn" data-action="minimize">−</button>
+      <button class="tb-btn" data-action="maximize">□</button>
+      <button class="tb-btn close" data-action="close">×</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="status" class="status" data-i18n="initializing">Inicializando...</div>
+    <button class="refresh" id="refreshBtn" data-i18n="refreshBtn">🔄 Actualizar cámaras</button>
+
+    <h2 data-i18n="availableCams">Cámaras disponibles</h2>
+    <div id="camList"></div>
+
+    <h2 data-i18n="activeWindows">Ventanas activas</h2>
+    <div id="activeList"><em data-i18n="noneActive">Ninguna activa</em></div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

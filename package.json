@@ -1,0 +1,68 @@
+{
+  "name": "camapp",
+  "version": "1.0.0",
+  "description": "Gestor de cámaras",
+  "main": "main.js",
+  "homepage": "https://github.com/adga137/camapp",
+  "author": {
+    "name": "Alejandro García",
+    "email": "desarrollo.adga137@gmail.com",
+    "url": "https://github.com/adga137"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux",
+    "build:all": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.adga137.camarasapp",
+    "productName": "Cámaras App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "camera-window.html",
+      "renderer.js",
+      "camera-renderer.js",
+      "styles.css",
+      "assets/**"
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "assets/icon.png"
+    },
+    "mac": {
+      "target": ["dmg"],
+      "icon": "assets/icon.png",
+      "category": "public.app-category.utilities",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "assets/entitlements.mac.plist",
+      "entitlementsInherit": "assets/entitlements.mac.plist"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "assets/icon.png",
+      "category": "Utility",
+      "maintainer": "Tu Nombre <tu@email.com>",
+      "synopsis": "Gestor de cámaras web con fondos virtuales",
+      "description": "Aplicación de escritorio multiplataforma para gestionar cámaras con eliminación de fondo en tiempo real."
+    },
+    "publish": null,
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
