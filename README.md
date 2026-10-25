@@ -1,141 +1,140 @@
-# 📷 Cámaras App (Multi-Cam Desktop)
+[README English](https://github.com/adga137/multi-cam-app/blob/main/README.md) , [README Spanish](https://github.com/adga137/multi-cam-app/blob/main/README-ES.md) ,  [README Brazilian Portuguese](https://github.com/adga137/multi-cam-app/blob/main/README-PT-BR.md)
 
-Una aplicación de escritorio multiplataforma construida con **Electron** que permite gestionar múltiples cámaras web en ventanas independientes, sin bordes del sistema operativo, con controles de zoom, recorte, paneo y activación de flash (torch) si el hardware lo soporta. Incluye soporte multi-idioma y una interfaz limpia y optimizada.
+# 📷 Camera App (Multi-Cam Desktop)
 
----
+A cross-platform desktop application built with **Electron** that allows for the management of multiple webcams in independent, borderless windows. It features controls for zoom, cropping, panning, and flash (torch) activation—provided the hardware supports it. The application includes multi-language support and a clean, optimized interface.
 
-## 🤝 Créditos y Desarrollo
-
-Este proyecto es el resultado de una colaboración entre inteligencia artificial y desarrollo humano:
-
-- **Desarrollo Principal y Arquitectura**: Desarrollado por **Qwen3.7** (Modelo de IA de Alibaba Cloud).
-- **Co-Desarrollador y Ajustes Finos**: Alejandro García Github: **adga137** (Encargado de la supervisión, ajustes finos de UI/UX, pruebas de hardware y optimización visual).
+![Screen Shot](img/screenshot_app.png)
 
 ---
 
-## ⚖️ Licencia
+## 🤝 Credits and Development
 
-Este software está protegido bajo la **Licencia Pública General de GNU v3.0 (GPLv3)**.  
-Esto significa que eres libre de usar, modificar y distribuir el software, siempre y cuando cualquier trabajo derivado se distribuya bajo la misma licencia y se mantenga el código abierto.  
-Consulta el archivo `LICENSE` para más detalles o visita: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+This project is the result of a collaboration between artificial intelligence and human development:
+
+- **Core Development and Architecture**: Developed by **Qwen3.7** (an AI model from Alibaba Cloud).
+- **Co-developer and Fine-tuning**: Alejandro García (GitHub: **adga137**) – responsible for oversight, UI/UX fine-tuning, hardware testing, and visual optimization.
 
 ---
 
-## ☕ Apoya el Desarrollo
+## ⚖️ Licence
 
-Si esta aplicación te resulta útil y deseas apoyar su mantenimiento, la corrección de errores y el desarrollo de nuevas funciones en el futuro, puedes hacer una donación a través de los siguientes medios:
+This software is protected under the **GNU General Public License v3.0 (GPLv3)**.
+This means that you are free to use, modify, and distribute the software, provided that any derivative work is distributed under the same license and the code remains open source.
+See the `LICENSE` file for further details, or visit: [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+## ☕ Support Development
+
+If you find this application useful and would like to support its maintenance, bug fixes, and the development of new features in the future, you can make a donation through the following channels:
 
 - **Binance ID**: `[60122342]`
 - **Bitcoin (BTC)**: `[1PFp17P2fHH1kwywHsuR84XDU9jZfXR6gU]`
 - **Litecoin (LTC)**: `[LRqgbivRfHTqk3S2iU5QKN5Hsfnqufzikj]`
 
-*Cualquier aporte, por pequeño que sea, es profundamente apreciado y se destina directamente a la mejora continua del proyecto.*
+*Any contribution, however small, is deeply appreciated and goes directly toward the continuous improvement of the project.*
 
 ---
 
-## 🚀 Características Principales
+## 🚀 Key Features
 
-- 🪟 **Ventanas Independientes**: Cada cámara se abre en una ventana nativa del sistema operativo sin barra de título (`frame: false`).
-- 💡 **Soporte de Flash/Torch**: Botón dedicado para activar la luz de la cámara (se oculta automáticamente si el hardware no lo soporta).
-- 🔍 **Controles de Imagen**: Zoom digital, recorte (crop) y paneo (movimiento de la imagen) en tiempo real.
-- 🌍 **Multi-idioma**: Soporte nativo para Español, Inglés y Portugués (fácilmente extensible), con persistencia de la preferencia del usuario.
-- 🖥️ **Multiplataforma**: Compilable para Windows, macOS y Linux.
-
----
-
-## 🛠️ Requisitos de Software y Código
-
-Para compilar y ejecutar este proyecto, necesitas tener instalado en tu sistema:
-
-1. **Node.js**: Versión LTS (recomendada v20.x o superior). [Descargar aquí](https://nodejs.org/)
-2. **npm**: Viene incluido con Node.js.
-3. **Git**: Para clonar el repositorio.
-4. **Dependencias de compilación por Sistema Operativo**:
-   - **Windows**: Python 3.x y "Visual Studio Build Tools" (con el workload de C++).
-   - **macOS**: Xcode y las herramientas de línea de comandos de Xcode (`xcode-select --install`).
-   - **Linux**: `build-essential`, `fakeroot`, `dpkg`, `rpm` (dependiendo de si compilas `.deb` o `.rpm`). En Ubuntu/Debian: `sudo apt install build-essential fakeroot dpkg`.
+- 🪟 **Independent Windows**: Each camera opens in a native operating system window without a title bar (`frame: false`).
+- 💡 **Flash/Torch Support**: A dedicated button to activate the camera light (automatically hidden if the hardware does not support it).
+- 🔍 **Image Controls**: Real-time digital zoom, cropping, and panning (image movement).
+- 🌍 **Multi-language**: Native support for Spanish, English, and Portuguese (easily extensible), with user preference persistence.
+- 🖥️ **Multi-platform**: Compilable for Windows, macOS, and Linux.
 
 ---
 
-## 📦 Instalación y Configuración
+## 📦 Installation and Configuration
 
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/TU_USUARIO/camaras-app.git
-   cd camaras-app
-   ```
-   
-2. Instala las dependencias del proyecto:
+1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/YOUR_USERNAME/camaras-app.git
+cd camaras-app
+```
 
-    ```bash
-    npm install
-    ```
-3. (Opcional pero recomendado): Coloca un icono personalizado de 512x512 píxeles en formato PNG dentro de la carpeta assets/ con el nombre icon.png.
+2. Install the project dependencies:
 
+```bash
+npm install
+```
+3. (Optional but recommended): Place a custom 512x512-pixel PNG icon file named `icon.png` inside the `assets/` folder.
 
-## 💻 Ejecución en Modo Desarrollo
+---
 
-Para probar la aplicación en tiempo real con herramientas de desarrollo (DevTools) habilitadas:
+## 💻 Running in Development Mode
 
-    ```bash
-    npm run dev
-    ```
+To test the application in real-time with developer tools (DevTools) enabled:
 
-O simplemente usa **npm** start para ejecutarla sin las herramientas de desarrollo.
+```bash
+npm run dev
+```
 
+Or simply use **npm start** to run it without the developer tools.
 
-## 🏗️ Compilación y Distribución (Build)
+---
 
-El proyecto utiliza electron-builder para empaquetar la aplicación en instaladores nativos. Asegúrate de ejecutar estos comandos en el sistema operativo para el que deseas compilar (ej. compilar para macOS requiere estar en una Mac).
+## 🏗️ Building and Distribution
 
-### Compilar para todas las plataformas (si estás en macOS)
+The project uses `electron-builder` to package the application into native installers. Ensure that you run these commands on the operating system for which you intend to build (e.g., building for macOS requires being on a Mac).
 
-    ```bash
-    npm run build:all
-    ```
+---
 
-### Compilar solo para Windows (.exe / NSIS)
+### Build for all platforms (if on macOS)
 
-    ```bash
-    npm run build:win
-    ```
+```bash
+npm run build:all
+```
 
-El instalador se generará en la carpeta dist/.
+### Build for Windows only (.exe / NSIS)
 
+```bash
+npm run build:win
+```
 
-### Compilar solo para macOS (.dmg)
+The installer will be generated in the `dist/` folder.
 
-    ```bash
-    npm run build:mac
-    ```
+### Build for macOS only (.dmg)
 
-**Nota:** Para distribuir públicamente en macOS, necesitarás configurar certificados de Apple y notarización en el package.json.
-Compilar solo para Linux (.AppImage y .deb)
+```bash
+npm run build:mac
+```
 
-## 📂 Estructura del Proyecto
+**Note:** To distribute publicly on macOS, you will need to configure Apple certificates and notarization in `package.json`.
+Build for Linux only (.AppImage and .deb)
+
+---
+
+## 📂 Project Structure
 
 ```text
 camaras-app/
-├── assets/                 # Iconos y recursos estáticos
-├── .github/                # Workflows de GitHub Actions (CI/CD)
-├── main.js                 # Proceso principal de Electron
-├── preload.js              # Puente seguro entre el backend y el frontend
-├── index.html              # Interfaz de la ventana principal
-├── camera-window.html      # Interfaz de las ventanas de cámara
-├── renderer.js             # Lógica de la ventana principal
-├── camera-renderer.js      # Lógica de las ventanas de cámara (WebRTC, controles)
-├── i18n.js                 # Sistema de traducción y localización
-├── styles.css              # Hoja de estilos global
-└── package.json            # Configuración del proyecto y de electron-builder
+├── assets/                 # Icons and static assets
+├── .github/                # GitHub Actions workflows (CI/CD)
+├── main.js                 # Electron main process
+├── preload.js              # Secure bridge between backend and frontend
+├── index.html              # Main window interface
+├── camera-window.html      # Camera window interface
+├── renderer.js             # Main window logic
+├── camera-renderer.js      # Camera window logic (WebRTC, controls)
+├── i18n.js                 # Translation and localization system
+├── styles.css              # Global stylesheet
+└── package.json            # Project and electron-builder configuration
 ```
 
-## ⚠️ Notas Importantes
+---
 
-- Permisos de Cámara: La primera vez que ejecutes la app, el sistema operativo (especialmente macOS y Windows 11) solicitará permiso para acceder a la cámara. Debes concederlo.
-- Wayland en Linux: Si usas una distribución Linux con Wayland, asegúrate de que las variables de entorno de PipeWire estén habilitadas para la captura de WebRTC (ya incluido en los flags de main.js).
-- Flash/Torch: La función de flash solo aparecerá si la API del navegador detecta la capacidad torch en el track de video de la cámara.
+## ⚠️ Important Notes
 
-## 📬 Contacto y Contribuciones
+- Camera Permissions: The first time you run the app, the operating system (especially on macOS and Windows 11) will request permission to access the camera. You must grant this permission.
+- Wayland on Linux: If you are using a Linux distribution with Wayland, ensure that the PipeWire environment variables are enabled for WebRTC capture (this is already included in the flags within `main.js`).
+- Flash/Torch: The flash feature will only appear if the browser API detects "torch" capability in the camera's video track.
 
-Las contribuciones, reportes de bugs y solicitudes de funciones son bienvenidas. Por favor, abre un Issue o un Pull Request en este repositorio.
-¡Gracias por usar Cámaras App!
+---
+
+## 📬 Contact and Contributions
+
+Contributions, bug reports, and feature requests are welcome. Please open an Issue or a Pull Request in this repository.
+Thank you for using Cámaras App!
